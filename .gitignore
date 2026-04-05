@@ -17,7 +17,6 @@
 *.run.xml
 
 # Editors
-.vscode/
 *.swp
 *~
 .DS_Store
