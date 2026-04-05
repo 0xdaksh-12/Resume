@@ -86,6 +86,6 @@
 % ---------- Spacing ----------
 \def\namesize{\huge}
 \def\nameskip{\smallskip}
-\def\addressskip{\vskip 2pt}
-\def\sectionskip{\smallskip}
-\def\sectionlineskip{\smallskip}
+\def\addressskip{\smallskip}
+\def\sectionskip{\medskip}
+\def\sectionlineskip{\medskip}
