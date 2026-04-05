@@ -51,19 +51,9 @@ Backend-focused software engineer with a strong interest in distributed systems,
 
 ## 🔧 How It Works
 
-This repository uses GitHub Actions to automatically compile `main.tex` into a PDF on every push.
+Push any change to `main.tex` or `resume.cls` and GitHub Actions automatically compiles the PDF via [`xu-cheng/latex-action`](https://github.com/xu-cheng/latex-action) and commits the result back to the repo.
 
-**Local compilation:**
-```bash
-pdflatex main.tex
-```
-
-Or with `latexmk`:
-```bash
-latexmk -pdf main.tex
-```
-
-Requires a local LaTeX installation (`texlive-full` or `MiKTeX`).
+**For local preview**, open `main.tex` in VS Code with the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension — it compiles and previews the PDF inline on save (requires a local TeX installation such as `texlive-full` or `MiKTeX`).
 
 ---
 

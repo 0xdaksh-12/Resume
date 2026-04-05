@@ -1,7 +1,8 @@
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
 \LoadClass[11pt,letterpaper]{article}
-\usepackage[parfill]{parskip}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
 \usepackage{array}
 \usepackage{ifthen}
 \pagestyle{empty}
@@ -85,6 +86,6 @@
 % ---------- Spacing ----------
 \def\namesize{\huge}
 \def\nameskip{\smallskip}
-\def\addressskip{\smallskip}
-\def\sectionskip{\medskip}
-\def\sectionlineskip{\medskip}
+\def\addressskip{\vskip 2pt}
+\def\sectionskip{\smallskip}
+\def\sectionlineskip{\smallskip}
