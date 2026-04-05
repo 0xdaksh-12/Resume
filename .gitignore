@@ -16,6 +16,10 @@
 *.bcf
 *.run.xml
 
+# Node
+node_modules/
+package-lock.json
+
 # Editors
 .vscode/
 *.swp
