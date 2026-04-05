@@ -1,0 +1,53 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**.tex"
+      - "**.cls"
+      - ".github/workflows/build-resume.yml"
+      - ".gitignore"
+      - "docs/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Compile LaTeX → PDF
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX resume
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          latexmk_use_xelatex: false
+          latexmk_shell_escape: false
+
+      - name: Copy PDF to output and docs
+        run: |
+          mkdir -p output docs
+          cp main.pdf output/Daksh_Resume.pdf
+          cp main.pdf docs/Daksh_Resume.pdf
+          echo "✅ PDF compiled and placed in output/ and docs/"
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Daksh_Resume
+          path: output/Daksh_Resume.pdf
+          retention-days: 90
+
+      - name: Commit updated PDF
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "ci: rebuild resume PDF [skip ci]"
+          file_pattern: "output/Daksh_Resume.pdf docs/Daksh_Resume.pdf"
+          commit_user_name: "GitHub Actions"
+          commit_user_email: "actions@github.com"
+          commit_author: "GitHub Actions <actions@github.com>"

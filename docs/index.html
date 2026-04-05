@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daksha Jha — Software Engineer</title>
+  <meta name="description" content="Daksha Jha — Software Engineer specialising in distributed systems, backend engineering, and full-stack development. View and download resume." />
+  <meta property="og:title" content="Daksha Jha — Resume" />
+  <meta property="og:description" content="Backend & distributed systems engineer. Java, TypeScript, NestJS, Go, Kubernetes." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── Background canvas ─── -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+
+  <!-- ─── Header / Hero ─── -->
+  <header class="hero">
+    <div class="container">
+
+      <div class="badge-row">
+        <span class="badge badge-green">
+          <span class="dot"></span>
+          Open to opportunities
+        </span>
+      </div>
+
+      <h1 class="hero-name">Daksha Jha</h1>
+      <p class="hero-role">Software Engineer · Distributed Systems &amp; Full-Stack</p>
+      <p class="hero-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Gwalior, Madhya Pradesh
+      </p>
+
+      <!-- ─── CTA buttons ─── -->
+      <div class="hero-actions">
+        <a id="download-resume-btn" href="Daksh_Resume.pdf" download="Daksh_Resume.pdf" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a id="github-link" href="https://github.com/0xflame-7" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          0xflame-7
+        </a>
+        <a id="linkedin-link" href="https://linkedin.com/in/daksh-jha" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+
+      <!-- ─── Tech stack pills ─── -->
+      <div class="stack-section">
+        <p class="stack-label">Tech Stack</p>
+        <div class="stack-grid" id="tech-stack">
+          <span class="pill pill-blue">Java</span>
+          <span class="pill pill-blue">TypeScript</span>
+          <span class="pill pill-teal">NestJS</span>
+          <span class="pill pill-teal">Go / Gin</span>
+          <span class="pill pill-teal">FastAPI</span>
+          <span class="pill pill-purple">React.js</span>
+          <span class="pill pill-purple">Next.js</span>
+          <span class="pill pill-orange">PostgreSQL</span>
+          <span class="pill pill-orange">Redis</span>
+          <span class="pill pill-orange">MongoDB</span>
+          <span class="pill pill-orange">RabbitMQ</span>
+          <span class="pill pill-green">Docker</span>
+          <span class="pill pill-green">Kubernetes</span>
+          <span class="pill pill-green">GitHub Actions</span>
+          <span class="pill pill-yellow">gRPC</span>
+          <span class="pill pill-yellow">Distributed Systems</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ─── Stats bar ─── -->
+  <section class="stats-bar" aria-label="Competitive programming stats">
+    <div class="container stats-inner">
+      <div class="stat">
+        <span class="stat-value">1805</span>
+        <span class="stat-label">Codeforces Max Rating · Expert</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-value">Knight</span>
+        <span class="stat-label">LeetCode · 200+ problems solved</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <span class="stat-value">5★</span>
+        <span class="stat-label">HackerRank · C++, SQL, Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Projects highlights ─── -->
+  <section class="projects-section" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading" class="section-heading">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card" id="project-fluxterm">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">FluxTerm</h3>
+              <p class="project-subtitle">Shell Notebook — VS Code Extension</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/0xflame-7/Flow" target="_blank" rel="noopener" aria-label="FluxTerm GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://marketplace.visualstudio.com/items?itemName=0xflame-7.fluxterm" target="_blank" rel="noopener" aria-label="FluxTerm Marketplace">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project-desc">Custom VS Code editor with stateful webview, DAG-based command chaining, concurrent execution, and real-time ANSI output streaming across bash, zsh, PowerShell, and cmd.</p>
+          <div class="project-tags">
+            <span class="tag">TypeScript</span><span class="tag">VS Code API</span><span class="tag">React</span><span class="tag">Zustand</span>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-fluxly">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">fluxly</h3>
+              <p class="project-subtitle">Distributed URL Shortener</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/0xflame-7/fluxly" target="_blank" rel="noopener" aria-label="fluxly GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://fluxly.render.com/" target="_blank" rel="noopener" aria-label="fluxly Live">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project-desc">Microservices URL shortener with NestJS + Go (gRPC), event-driven analytics via RabbitMQ + ClickHouse, Kubernetes deployment, Redis caching, and OAuth 2.0 auth.</p>
+          <div class="project-tags">
+            <span class="tag">NestJS</span><span class="tag">Go</span><span class="tag">gRPC</span><span class="tag">Kubernetes</span><span class="tag">RabbitMQ</span>
+          </div>
+        </article>
+
+        <article class="project-card" id="project-forge">
+          <div class="project-header">
+            <div>
+              <h3 class="project-title">Forge</h3>
+              <p class="project-subtitle">Workflow Engine / Self-hosted CI</p>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/0xflame-7/Forge" target="_blank" rel="noopener" aria-label="Forge GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <p class="project-desc">Self-hosted CI/CD system triggered by Git events. Executes pipeline jobs in isolated Docker containers, deploys to Kubernetes, with full logging and status tracking.</p>
+          <div class="project-tags">
+            <span class="tag">Go</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">GitHub Actions</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PDF viewer ─── -->
+  <section class="viewer-section" aria-labelledby="resume-heading">
+    <div class="container">
+      <h2 id="resume-heading" class="section-heading">Resume</h2>
+      <div class="pdf-wrapper">
+        <iframe
+          id="resume-iframe"
+          src="Daksh_Resume.pdf"
+          title="Daksha Jha Resume PDF"
+          loading="lazy"
+        ></iframe>
+        <div class="pdf-fallback" id="pdf-fallback" aria-live="polite">
+          <p>PDF preview not available in this browser.</p>
+          <a href="Daksh_Resume.pdf" download="Daksh_Resume.pdf" class="btn btn-primary">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Daksha Jha · Built with LaTeX &amp; GitHub Actions</p>
+      <div class="footer-links">
+        <a href="https://github.com/0xflame-7/Resume" target="_blank" rel="noopener" id="footer-repo-link">Source on GitHub</a>
+        <a href="Daksh_Resume.pdf" download="Daksh_Resume.pdf" id="footer-download-link">Download PDF</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hide iframe fallback if PDF loads successfully
+    const iframe = document.getElementById('resume-iframe');
+    const fallback = document.getElementById('pdf-fallback');
+    if (iframe) {
+      iframe.addEventListener('load', () => { fallback.style.display = 'none'; });
+      iframe.addEventListener('error', () => { iframe.style.display = 'none'; });
+    }
+
+    // Animate pills into view
+    const pills = document.querySelectorAll('.pill, .project-card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    pills.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

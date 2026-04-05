@@ -1,0 +1,28 @@
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+
+# Editors
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Keep output/ tracked — CI commits the compiled PDF here
+output/*
+!output/.gitkeep
+!output/*.pdf
